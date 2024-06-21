@@ -1,0 +1,25 @@
+<!-- mainpage.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <!-- Load static template tag -->
+    {% load static %}
+    <!-- Link to static CSS files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage.css' %}">
+</head>
+<body>
+    
+    <!-- "Are You" section -->
+    <div class="container">
+        <div class="logo-container">
+            <img src="{% static 'img/logoOC.png' %}" alt="logo">
+        </div>
+        <h1>Are You ?</h1>
+        <a href="{% url 'studentsignin' %}" class="box">Student</a>
+        <div class="line">or</div>
+        <a href="{% url 'lecturersignin' %}" class="box">Lecturer</a>
+    </div>
+</body>
+</html>

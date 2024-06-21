@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <!-- Load static template tag -->
+    {% load static %}
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'studentregistration.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+        <br>
+        <form action="" method="post">  <!-- Corrected form action to be empty -->
+            {% csrf_token %}
+            <label for="name">Enter Name:</label><br>
+            <input type="text" id="name" name="name" placeholder=""><br>
+            
+            <label for="idd">Enter ID:</label><br>
+            <input type="text" id="idd" name="idd" placeholder=""><br>
+            
+            <label for="course">Enter Course:</label><br>
+            <input type="text" id="course" name="course" placeholder=""><br>
+            
+            <label for="numphone">Enter No. Phone:</label><br>
+            <input type="text" id="numphone" name="numphone" placeholder=""><br>
+            
+            <label for="email">Enter E-mail:</label><br>
+            <input type="text" id="email" name="email" placeholder=""><br>
+            
+            <label for="password">Enter Password:</label><br>
+            <input type="password" id="password" name="password" placeholder=""><br>
+            
+            
+            <input type="submit" value="SUBMIT">
+        </form>
+        <br>
+        {{ message }}
+
+        
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2; /* Background color for the body */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.logo-container {
+    margin-top: 20px; /* Adjust margin for spacing */
+    
+}
+
+.logo-container img {
+    width: 150px; /* Adjust width of the logo */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Background color for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+    padding: 20px; /* Adjust container height*/
+    max-width: 60%; /* Adjust based on your layout */
+    margin: auto; /* Center horizontally */
+    margin-top: 20px; /* Adjust margin for spacing */
+    padding-bottom: 5%;
+    
+}
+
+.box {
+    border: none; /* Remove border */
+    padding: 12px 50px; /* Increase padding for buttons */
+    margin: 10px;
+    cursor: pointer;
+    color: white; /* White text */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border: 2px solid transparent; /* Transparent border */
+    background: linear-gradient(to right, #FF9A02, #FED404); /* Gradient background */
+    
+    
+}
+
+.box:hover {
+    background: linear-gradient(to right, #FF7D02, #FFC404); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Move up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Increase margin for spacing */
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px; /* Adjust based on your layout */
+    color: #555; /* Gray color for line */
+}
+
+.line::before,
+.line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 0 10px; /* Spacing around the line */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font for h1 */
+}
+
+img {
+    margin-bottom: 20px;
+}

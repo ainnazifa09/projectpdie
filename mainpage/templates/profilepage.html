@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <!-- Load static template tag -->
+    {% load static %}
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'profilepage.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Page</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Course</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </tr>
+            {% for data in displaydata %}
+            <tr>
+                <td>{{ data.name }}</td>
+                <td>{{ data.idd }}</td>
+                <td>{{ data.course }}</td>
+                <td>{{ data.numphone }}</td>
+                <td>{{ data.email }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

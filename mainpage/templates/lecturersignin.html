@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Sign In</title>
+    <!-- Load static template tag -->
+    {% load static %}
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'lecturersignin.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Sign In</h1>
+    <br>
+    <form action="{% url 'lecturersignin' %}" method="post">
+        {% csrf_token %}
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+        
+        <input type="submit" value="SIGN IN">
+    </form>
+    <br>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+</div>
+
+</body>
+</html>

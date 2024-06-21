@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <!-- Load static template tag -->
+    {% load static %}
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'studentdashboard.css' %}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="{% static 'img/logoOC.png' %}" alt="LOGO">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="bold">Dashboard</li>
+                    <li><a href="{% url 'studentdashboard' %}">Home</a></li>
+                    <li class="bold">General</li>
+                    <li><a href="#">Data Student</a></li>
+                    <li><a href="#">Event Page</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="links">
+                <p>LINK</p>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ockpmb/">Instagram</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="content">
+            <header>
+                <h1>Dashboard Student</h1>
+                <div class="profile-icon">
+                    <a href="{% url 'profilepage' %}">
+                        <img src="{% static 'img/profile.png' %}" alt="Profile">
+                    </a>
+                </div>
+            </header>
+            <section class="main-content">
+                <h2>Organization Chart</h2>
+                <img src="{% static 'img/chartt.png' %}" alt="Organization Chart" class="organization-chart">
+            </section>
+        </main>
+    </div>
+</body>
+</html>

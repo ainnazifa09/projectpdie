@@ -1,0 +1,97 @@
+/* signin.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 200%;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure form takes the full width of the container */
+}
+
+label {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* Ensure inputs take the full width of the form */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #bbb;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #FF9A02, #FED404);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 0.7rem 1.2rem;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #FED404, #FF9A02);
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+p a {
+    color: #FF9A02;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
